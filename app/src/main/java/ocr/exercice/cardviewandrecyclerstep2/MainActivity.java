@@ -19,9 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ArrayList<CardViewItem> cardViewList = new ArrayList<>();
-        cardViewList.add(new CardViewItem(R.drawable.paysage_paris_img,"Line1","Line2","LX","KI","FR"));
-        cardViewList.add(new CardViewItem(R.drawable.paris_seconde_photo,"Line3","Line4","LX","KI","FR"));
-        cardViewList.add(new CardViewItem(R.drawable.parix,"Line5","Line6","LX","KI","FR"));
+        cardViewList.add(new CardViewItem(R.drawable.parix,"Line1","Line2","LX","KI","FR"));
+        cardViewList.add(new CardViewItem(R.drawable.ppd,"Line3","Line4","LX","KI","FR"));
+        cardViewList.add(new CardViewItem(R.drawable.paris_seconde_photo,"Line5","Line6","LX","KI","FR"));
+        cardViewList.add(new CardViewItem(R.drawable.gjh,"Line5","Line6","LX","KI","FR"));
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true);
