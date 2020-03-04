@@ -34,7 +34,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
             mTextView2ContentNews = itemView.findViewById(R.id.content_news);
             mTextView3AuthorName = itemView.findViewById(R.id.author_name);
             mTextView4Date = itemView.findViewById(R.id.date);
-            mTextView5Hour = itemView.findViewById(R.id.hour);
         }
     }
     public CardViewAdapter(ArrayList<CardViewItem> cardViewList ){
@@ -61,7 +60,6 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         //viewHolder.mImageRsrc.setText((CharSequence) mExampleList.get(i));
         viewHolder.mTextView3AuthorName.setText(currentItem.getmTextView3AuthorName());
         viewHolder.mTextView4Date.setText(currentItem.getmTextView4Date());
-        viewHolder.mTextView5Hour.setText(currentItem.getmTextView5Hour());
 
 
     }
