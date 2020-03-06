@@ -16,8 +16,8 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:layout_height="60dp"
+            android:background="@drawable/degradeorangee"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,11 +27,12 @@
             app:titleTextColor="#FFFFFF" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/recyclerViewId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#897C9A"
-            android:padding="4dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:padding="8dp"
             android:scrollbars="vertical" />
 
 

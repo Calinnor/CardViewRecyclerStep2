@@ -16,6 +16,7 @@
             android:id="@+id/covert_img1"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:scaleType="centerCrop"
             android:clickable="true"
             android:focusable="true"
             android:padding="2dp"
