@@ -13,6 +13,7 @@
         android:layout_marginTop="164dp"
         android:background="@drawable/reussi"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/background_only"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

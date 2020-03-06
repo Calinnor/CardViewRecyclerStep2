@@ -33,7 +33,8 @@
             android:background="@android:color/white"
             android:clickable="true"
             android:padding="8dp"
-            android:scrollbars="vertical" />
+            android:scrollbars="vertical"
+            android:focusable="true" />
 
 
     </LinearLayout>

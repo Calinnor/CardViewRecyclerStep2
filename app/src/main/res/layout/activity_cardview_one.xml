@@ -25,7 +25,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/background_img_of_cardview" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -42,7 +43,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentTop="true"
-                                android:text=" My exercice"
+                                android:text="@string/my_exercice"
                                 android:textAlignment="viewStart"
                                 android:textColor="@android:color/white"
                                 android:textSize="15sp"
@@ -59,8 +60,7 @@
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="20dp"
                                 android:maxLines="2"
-                                android:text="Ici le texte blablabla c'est comme ca pour pouvoir vérifier si il y a une ligne, deux ou beacoup plus. encore une fois :Ici le texte blablabla c'est comme ca pour pouvoir vérifier
-                                  si il y a une ligne, deux ou beacoup plus"
+                                android:text="@string/ici_le_texte_blablabla_c_est_comme_ca_pour_pouvoir_v_rifier_si_il_y_a_une_ligne_deux_ou_beacoup_plus_encore_une_fois_ici_le_texte_blablabla_c_est_comme_ca_pour_pouvoir_v_rifier_si_il_y_a_une_ligne_deux_ou_beacoup_plus"
                                 android:textAlignment="viewStart"
                                 android:textColor="@android:color/white"
                                 android:textSize="15sp"
@@ -75,7 +75,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginStart="8dp"
                                 android:layout_marginBottom="16dp"
-                                android:text="Ici l'auteur"
+                                android:text="@string/ici_l_auteur"
                                 android:textColor="@android:color/white"
                                 android:textSize="12sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -89,7 +89,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginEnd="8dp"
                                 android:layout_marginBottom="16dp"
-                                android:text="date"
+                                android:text="@string/date"
                                 android:textColor="@android:color/white"
                                 android:textSize="12sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
