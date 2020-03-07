@@ -25,16 +25,21 @@
             app:layout_constraintTop_toTopOf="parent"
             app:title="Enzo and Kitie"
             app:titleTextColor="#FFFFFF" />
+        <Button
+            android:id="@+id/button_to_next_activity_for_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button test to next activity"
+            android:textSize="8dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/white"
-            android:clickable="true"
             android:padding="8dp"
-            android:scrollbars="vertical"
-            android:focusable="true" />
+            android:scrollbars="vertical" />
+
 
 
     </LinearLayout>

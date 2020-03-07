@@ -17,13 +17,14 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
 
 
 
-    static class CardViewHolder extends RecyclerView.ViewHolder {
+    static class CardViewHolder extends RecyclerView.ViewHolder{
 
        private ImageView mImageRsrcCovertImg1;
        private TextView mTextView1NewspaperName;
        private TextView mTextView2ContentNews;
        private TextView mTextView3AuthorName;
        private TextView mTextView4Date;
+
 
         CardViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -33,6 +34,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
             mTextView3AuthorName = itemView.findViewById(R.id.author_name);
             mTextView4Date = itemView.findViewById(R.id.date);
         }
+
     }
     CardViewAdapter(ArrayList<CardViewItem> cardViewList){
         mCardViewList = cardViewList;
@@ -44,6 +46,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_cardview_one,parent,false);
         return new CardViewHolder(v);
     }
+
     @Override
     public void onBindViewHolder(@NonNull CardViewHolder viewHolder, int position) {
 
@@ -56,14 +59,11 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         //viewHolder.mImageRsrc.setText((CharSequence) mExampleList.get(i));
         viewHolder.mTextView3AuthorName.setText(currentItem.getmTextView3AuthorName());
         viewHolder.mTextView4Date.setText(currentItem.getmTextView4Date());
-
-
     }
 
     @Override
     public int getItemCount() {
         return mCardViewList.size();
     }
-
 
 }
