@@ -2,6 +2,7 @@ package ocr.exercice.cardviewandrecyclerstep2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,15 +19,16 @@ import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements CardViewAdapter.OnCardviewListerner {
 
+    private static final String TAG ="" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+/*
 //configuration of button to second activity (test)
         Button buttonTestForSecondActivity = findViewById(R.id.button_to_next_activity_for_test);
         buttonTestForSecondActivity.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 openActivity_findBy_cliking();
             }
         });
-//end configuraztion button
+//end configuraztion button*/
 
 //configuration toolbar
         this.configureToolbar();
@@ -59,18 +61,20 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView mRecyclerView = findViewById(R.id.recyclerViewId);
         mRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
-        RecyclerView.Adapter mAdaptater = new CardViewAdapter(cardViewList);
+        RecyclerView.Adapter mAdaptater = new CardViewAdapter(cardViewList,this);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdaptater);
 //end configuration of recyclerview
 
     }//end oncreate
 
+
+/*
 //create intent methode for button test + start activity
     public void openActivity_findBy_cliking(){
         Intent intent = new Intent(this, Activity_findBy_cliking.class);
         startActivity(intent);
-    }
+    }*/
 
 //referencement toolbar + share button config
     private void configureToolbar() {
@@ -93,10 +97,15 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
                 return super.onOptionsItemSelected(item);
-        }
-//end of configuration toolbar+share button
+        }//end of configuration toolbar+share button
 
 
-    }//end main
+    @Override
+    public void onCardviewClik(int position) {
+       Log.d(TAG, "onCardviewClik: cliked");
+        Intent intent = new Intent(this, Activity_findBy_cliking.class);
+        startActivity(intent);
+    }
+}//end main
 
 

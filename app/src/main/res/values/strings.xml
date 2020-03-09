@@ -7,4 +7,6 @@
     <string name="ici_le_texte_blablabla_c_est_comme_ca_pour_pouvoir_v_rifier_si_il_y_a_une_ligne_deux_ou_beacoup_plus_encore_une_fois_ici_le_texte_blablabla_c_est_comme_ca_pour_pouvoir_v_rifier_si_il_y_a_une_ligne_deux_ou_beacoup_plus">Ici le texte blablabla c\'est comme ca pour pouvoir vérifier si il y a une ligne, deux ou beacoup plus. encore une fois :Ici le texte blablabla c\'est comme ca pour pouvoir vérifier si il y a une ligne, deux ou beacoup plus</string>
     <string name="share_button">Share_button</string>
     <string name="background_only">background only</string>
+    <string name="button_test_to_next_activity">Button test to next activity</string>
+    <string name="seconde_activit">Seconde activité</string>
 </resources>

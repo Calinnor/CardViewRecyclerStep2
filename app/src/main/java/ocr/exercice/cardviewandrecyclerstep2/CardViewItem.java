@@ -17,10 +17,6 @@ class CardViewItem {
         this.mTextView4Date = textView4Date;
     }
 
-    int getmImageRsrcCovertImg1() {
-        return mImageRsrcCovertImg1;
-    }
-
     String getmTextView1NewspaperName() {
         return mTextView1NewspaperName;
     }
@@ -35,5 +31,9 @@ class CardViewItem {
 
     String getmTextView4Date() {
         return mTextView4Date;
+    }
+
+    public int getmImageRsrcCovertImg1() {
+        return mImageRsrcCovertImg1;
     }
 }
