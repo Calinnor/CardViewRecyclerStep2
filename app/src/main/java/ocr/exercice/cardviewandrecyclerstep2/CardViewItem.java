@@ -33,7 +33,7 @@ class CardViewItem {
         return mTextView4Date;
     }
 
-    public int getmImageRsrcCovertImg1() {
+    int getmImageRsrcCovertImg1() {
         return mImageRsrcCovertImg1;
     }
 }

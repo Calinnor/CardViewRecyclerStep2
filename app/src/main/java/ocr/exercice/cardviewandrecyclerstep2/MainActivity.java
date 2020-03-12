@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,7 +19,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements CardViewAdapter.OnCardviewListerner {
 
-    private static final String TAG ="" ;
+    //private static final String TAG ="" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements CardViewAdapter.O
 
     @Override
     public void onCardviewClik(int position) {
-       Log.d(TAG, "onCardviewClik: cliked");
+       //Log.d(TAG, "onCardviewClik: cliked");
         Intent intent = new Intent(this, Activity_findBy_cliking.class);
         startActivity(intent);
     }

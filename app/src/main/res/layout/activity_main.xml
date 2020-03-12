@@ -25,6 +25,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:title="Enzo and Kitie"
             app:titleTextColor="#FFFFFF" />
+
+
 <!--        <Button-->
 <!--            android:id="@+id/button_to_next_activity_for_test"-->
 <!--            android:layout_width="match_parent"-->
